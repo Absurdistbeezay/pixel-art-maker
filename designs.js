@@ -3,40 +3,44 @@
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid(width, height) {
+function makeGrid(height, width) {
+  // Your code goes here!
+  clearGrid();
+  const canvas = $("#pixelCanvas");
 
-// Your code goes here!
-const canvas = $('#pixelCanvas');
-
-for(let i = 0; i<height; i++){
-    const tr = $('<tr></tr>');
-
-    for(let j = 0; j<width; j++){
-        tr.append('<td></td>');
+  for (let i = 0; i < height; i++) {
+    const row = $("<tr></tr>");
+    for (let j = 0; j < width; j++) {
+      row.append("<td></td");
     }
-  canvas.append(tr);
+    canvas.append(row);
+  }
 }
-
+//clear grid 
+function clearGrid(){
+    let canvas = $('#pixelCanvas');
+    while(canvas.children().length>0){
+        canvas.empty();
+    }
 }
 
 $(document).ready(function(){
 
+    //handle submit and get user input height and weight
     $('#submit').click(function(e){
-     
-        const height = $('#inputHeight').val();
-        const width =$('#inputWeight').val();
         e.preventDefault();
+        const height = $('#inputHeight').val();
+        const width = $('#inputWeight').val();
 
-        makeGrid(width, height);
-
+        makeGrid(height, width);
     });
 
-   $('#pixelCanvas').click(function (e) {
-      const getColor = $('#colorPicker').val();
-     $(e.target).css('background', getColor);
-   });
+//color target per user's click
+$('#pixelCanvas').click(function(e){
 
-
-
-
+const pickedColor = $('#colorPicker').val();
+    $(e.target).css('background', pickedColor);
 });
+});
+
+
