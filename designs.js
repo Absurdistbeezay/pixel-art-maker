@@ -16,31 +16,28 @@ function makeGrid(height, width) {
     canvas.append(row);
   }
 }
-//clear grid 
-function clearGrid(){
-    let canvas = $('#pixelCanvas');
-    while(canvas.children().length>0){
-        canvas.empty();
-    }
+
+//clear grid
+function clearGrid() {
+  let canvas = $("#pixelCanvas");
+  while (canvas.children().length > 0) {
+    canvas.empty();
+  }
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
+  //handle submit and get user input height and weight
+  $("#submit").click(function(e) {
+    e.preventDefault();
+    const height = $("#inputHeight").val();
+    const width = $("#inputWeight").val();
 
-    //handle submit and get user input height and weight
-    $('#submit').click(function(e){
-        e.preventDefault();
-        const height = $('#inputHeight').val();
-        const width = $('#inputWeight').val();
+    makeGrid(height, width);
+  });
 
-        makeGrid(height, width);
-    });
-
-//color target per user's click
-$('#pixelCanvas').click(function(e){
-
-const pickedColor = $('#colorPicker').val();
-    $(e.target).css('background', pickedColor);
+  //color target per user's click
+  $("#pixelCanvas").click(function(e) {
+    const pickedColor = $("#colorPicker").val();
+    $(e.target).css("background", pickedColor);
+  });
 });
-});
-
-
