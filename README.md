@@ -3,5 +3,8 @@
 ## Grow with Google Challenge Scholarship
 
 ### Final Project
+This simple web app allows users to create a grid of squares representing their design and apply colors to those sqares to create a digital masterpiece!
+
+![sample image](https://lh3.googleusercontent.com/qMC7VVk5r4Hg0xX28zprW5CMjunfwyn4d_HxvmhFaWImQkmlIWTBOG72MpVeRwjrg0vOEEDr74sgZwt3Trw-Svwgh3Ze8IgH32Aw2ySmeCe-aPuwKzK3Snsf06loYUU9O7UCCcwB2f5fBR6X7gKi9yJgM62tw4xLrpQBiaMfUYZbsYgSy1kkSXsPc7pUI0FqJIWL17yBZssl3ULFsezuuvkomC8FQIuFOtTo-uwkqB21xAnt7zzySx_myfVaL3w-zNNXoeks8qJc2_trFHFqHnqX2Qr5VWFavEmrvhDv-yzeDUMM71xf_mNspTmOYoNtPnfo5fBFCEx0_IGR2t4LggmG7dFfh1HSnevnKCj0Nbf6yzahUwH9JU2TFkq0vJ7fRFuYGBy7Hew2-4J7-ey34t_BiQPNM9slWD8lnkDl5VvW4-JtztecWjewEU28vmrlYAq-bmnrmLocUl-YrI39e7plgI2PLsut_WHc415JVb_b02EVLDsgGCXha8LkoznGGAofHdGLvhoT5zVbzgiNtqk1RuiR3x_buZuvq80pHj2CZnb4xLMjatwgG9-vBiGpAHpeoeQ26JJOneOsN00f_ILg_esbz0ll-hMoqoU=w682-h771-no)
 
 *version 1.0.0*
