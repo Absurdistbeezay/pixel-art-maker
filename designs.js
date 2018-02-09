@@ -3,10 +3,12 @@
 
 // When size is submitted by the user, call makeGrid()
 
+//Global variable
+const canvas = $("#pixelCanvas");
 function makeGrid(height, width) {
   // Your code goes here!
   clearGrid();
-  const canvas = $("#pixelCanvas");
+
 
   for (let i = 0; i < height; i++) {
     const row = $("<tr></tr>");
@@ -19,7 +21,6 @@ function makeGrid(height, width) {
 
 //clear grid
 function clearGrid() {
-  let canvas = $("#pixelCanvas");
   while (canvas.children().length > 0) {
     canvas.empty();
   }
@@ -36,7 +37,7 @@ $(document).ready(function() {
   });
 
   //color target per user's click
-  $("#pixelCanvas").click(function(e) {
+  canvas.click(function(e) {
     const pickedColor = $("#colorPicker").val();
     $(e.target).css("background", pickedColor);
   });
